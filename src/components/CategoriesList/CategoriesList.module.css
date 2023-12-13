@@ -1,0 +1,8 @@
+.CategoriesList_bar{
+    display: flex;
+    width: 1368px;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 32px;
+    flex-wrap: wrap;
+}
