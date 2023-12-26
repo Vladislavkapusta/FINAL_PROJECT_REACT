@@ -11,7 +11,7 @@
 
 .SaleForHome_Head{
     display: flex;
-    width: 1360px;
+    width: 1368px;
     align-items: center;
     gap: 32px;
 }
@@ -52,4 +52,37 @@
     gap: 10px;
     border-radius: var(--radius-small, 6px);
     border: 1px solid var(--grey-divider, #DDD);
+}
+
+@media (max-width: 400px) {
+    .SaleForHome_Container {
+        padding: 0px;
+        width: 100%;
+    }
+    
+    .SaleForHome_Head {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    
+    .SaleForHome_Head_Title {
+        font-size: 32px;
+        line-height: 110%;
+    }
+    
+    .SaleForHome_Btn_Area {
+        padding-top: 5px;
+    }
+    
+    .SaleForHome_Head_Line {
+        width: 100%;
+        height: 1px;
+    }
+    
+    .SaleForHome_Nav_Button {
+        font-size: 14px;
+        line-height: 126%;
+    }
 }

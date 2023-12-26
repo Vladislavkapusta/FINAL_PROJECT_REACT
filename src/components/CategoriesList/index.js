@@ -18,9 +18,9 @@ function CategoriesList({count}){
 
 
     return(
-        <ul className={s.CategoriesList_bar}>
+        <ul key={count} className={s.CategoriesList_bar}>
           {categories.slice(0, count).map((elem) => (
-              <CategoriesItem img={elem.image} name={elem.title} id = {elem.id} count = {count}/>
+              <Link to={'/category/'+elem.id}><CategoriesItem img={elem.image} name={elem.title} id = {elem.id} count = {count}/></Link>
           ))}
         </ul>
     )

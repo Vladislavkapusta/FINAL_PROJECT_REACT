@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import { Link } from 'react-router-dom';
 import s from './SaleForHome.module.css'
 import SalesList from '../SalesList';
+import { useRef } from 'react';
 
-const SaleForHome = () => {
+export const SaleForHome = forwardRef((ref) => {
+
   return (
-    <div className={`${s.SaleForHome_Container}`}>
+    <div className={`${s.SaleForHome_Container}`}
+    //  ref={ref}
+     >
         <header className= {`${s.SaleForHome_Head}`}>
             <h2 className= {`${s.SaleForHome_Head_Title}`}>Sale</h2>
             <div className= {`${s.SaleForHome_Btn_Area}`}>
@@ -17,6 +21,6 @@ const SaleForHome = () => {
     </div>
 
   );
-};
+});
 
-export default SaleForHome;
+

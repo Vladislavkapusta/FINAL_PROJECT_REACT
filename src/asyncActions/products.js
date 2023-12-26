@@ -1,6 +1,6 @@
 import { BASE_URL } from ".."
-import { allProductsAction, allProductsSaleAction, productsByCategoryAction } from "../store/productsListReducer"
-
+import { allProductsAction, allProductsSaleAction, productsByCategoryAction} from "../store/productsListReducer"
+import { getProductAction } from "../store/productsItemReducer"
 
 export function fetchAllProducts(){
     return function(dispatch){
@@ -26,5 +26,16 @@ export function fetchProductsByCategories(id){
         fetch(BASE_URL+'/categories/'+id)
             .then(res => res.json())
             .then(data => dispatch(productsByCategoryAction(data)))
+    }
+}
+
+
+
+
+export function fetchProductById(id){
+    return function(dispatch){
+        fetch(BASE_URL+'/products/'+id)
+            .then(res => res.json())
+            .then(data => dispatch(getProductAction(data)))
     }
 }

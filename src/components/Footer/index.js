@@ -1,7 +1,9 @@
 import React from 'react';
 import s from './Footer.module.css'
-import Insta from '../../media/ic-instagram.svg'
-import WA from '../../media/ic-whatsapp.svg'
+// import Insta from '../../media/ic-instagram.svg'
+// import WA from '../../media/ic-whatsapp.svg'
+import VK from '../../media/vk-outline.svg'
+import telega from '../../media/telega.png'
 
 const Footer = () => {
     return (
@@ -14,14 +16,14 @@ const Footer = () => {
                 </div>
                 <div className={`${s.info_bar_small}`}>
                     <div className={`${s.info_title}`}>Social</div>
-                    <div className={`${s.info_text}`}><img src={Insta} /> <img src={WA} /></div>
+                    <div className={`${s.info_text}`}><a href='https://vk.com/ithubcollege'><img style={{width: 43}} alt='VK' src={VK} /></a> <a href='https://t.me/ithubnews'><img style={{width: 43}} alt='telega' src={telega} /></a></div>
                 </div>
             </div>
             <div className={`${s.info_bar_field}`}>
-                <div className={`${s.info_bar_big}`}>
+                <a className={`${s.info_bar_big}`} href='https://yandex.ru/maps/213/moscow/house/dubininskaya_ulitsa_96/Z04YcARhTkAAQFtvfXtwcnhrYg==/?ll=37.631757%2C55.713487&z=17.1'>
                     <div className={`${s.info_title}`}>Addres</div>
                     <div className={`${s.info_text}`}>Dubininskaya Ulitsa, 96, Moscow, Russia, 115093</div>
-                </div>
+                </a>
                 <div className={`${s.info_bar_small}`}>
                     <div className={`${s.info_title}`}>Working Hours</div>
                     <div className={`${s.info_text}`}>24 hours a day</div>

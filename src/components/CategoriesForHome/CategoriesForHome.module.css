@@ -1,7 +1,7 @@
 .CategoriesForHome_Container{
     padding: 80px 40px 80px 40px;
     display: flex;
-    width: 1440px;
+    /* width: 1440px; */
     align-items: flex-start;
     align-content: flex-start;
     gap: 32px;
@@ -11,7 +11,7 @@
 
 .CategoriesForHome_Head{
     display: flex;
-    width: 1360px;
+    width: 1368px;
     align-items: center;
     gap: 32px;
 }
@@ -32,7 +32,7 @@
 }
 
 .CategoriesForHome_Head_Line{
-    width: 832px;
+    width: 820px;
     height: 1px;
     background-color: #282828;
 }
@@ -52,4 +52,33 @@
     gap: 10px;
     border-radius: var(--radius-small, 6px);
     border: 1px solid var(--grey-divider, #DDD);
+}
+
+@media (max-width: 400px) {
+    .CategoriesForHome_Container {
+        width: 100%;
+        padding: 40px;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .CategoriesForHome_Head {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .CategoriesForHome_Head_Title {
+        font-size: 32px;
+        line-height: 110%;
+    }
+
+    .CategoriesForHome_Btn_Area {
+        padding-top: 5px;
+    }
+
+    .CategoriesForHome_Head_Line {
+        width: 100%;
+    }
 }

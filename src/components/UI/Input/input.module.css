@@ -16,3 +16,12 @@
 .Registration_field::placeholder{
     color: #FFF;
 }
+
+@media (max-width: 400px) {
+    .Registration_field {
+      width: 100%; 
+      padding: 10px; 
+      font-size: 16px; 
+      margin-top: 10px; 
+    }
+  }

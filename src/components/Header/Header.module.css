@@ -44,4 +44,48 @@
     width: 48px;
     height: 48px;
     margin: 0px 40px 0px 0px ;
+
+    position: relative;
   }
+
+  /* Кружочек */
+  .circle {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%; 
+    background-color: #393;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+
+    position: absolute;
+    top: 7px;
+    left: 0;
+  }
+
+  @media only screen and (max-width: 400px) {
+    .header {
+    height: auto;
+    flex-direction: column;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+    
+    .logo {
+    margin-bottom: 16px;
+    }
+    
+    .navigation {
+    flex-direction: column;
+    gap: 12px;
+    margin: 0;
+    }
+    
+    .cart_button {
+    margin-top: 16px;
+    }
+    }

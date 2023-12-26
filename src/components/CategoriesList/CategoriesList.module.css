@@ -6,3 +6,12 @@
     gap: 32px;
     flex-wrap: wrap;
 }
+
+@media (max-width: 768px) {
+    .CategoriesList_bar {
+        width: 100%;
+        justify-content: center;
+        gap: 16px;
+        flex-direction: column;
+    }
+}

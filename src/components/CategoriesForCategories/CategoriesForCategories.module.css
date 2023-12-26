@@ -23,3 +23,23 @@
     font-weight: 700;
     line-height: 110%; /* 70.4px */
 }
+
+@media (max-width: 400px) {
+    .CategoriesForCategories_Container {
+        width: 100%;
+        padding: 0px;
+        flex-direction: column;
+    }
+
+    .CategoriesForCategories_Head {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .CategoriesForCategories_Head_Title {
+        font-size: 32px;
+        line-height: 110%;
+    }
+}

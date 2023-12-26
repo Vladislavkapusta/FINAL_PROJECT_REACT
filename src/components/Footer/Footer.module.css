@@ -78,3 +78,39 @@
     align-self: stretch;
     border-radius: var(--radius-big, 12px);
 }
+
+@media (max-width: 400px) {
+  .footer {
+  width: 90%;
+  padding: 0px;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .info_bar_field {
+  width: 90%;
+  flex-direction: column;
+  }
+  
+  .info_bar_big {
+  width: 90%;
+  padding: 20px;
+  align-items: center;
+  }
+  
+  .info_bar_small {
+  width: 90%;
+  padding: 20px;
+  margin-left: 0;
+  gap: 12px;
+  }
+  
+  .info_text {
+  font-size: 24px;
+  line-height: 130%;
+  }
+  
+  .map_space {
+  height: 250px;
+  }
+  }

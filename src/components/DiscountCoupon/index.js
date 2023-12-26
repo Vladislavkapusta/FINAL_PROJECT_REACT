@@ -3,6 +3,7 @@ import {useForm} from "react-hook-form"
 import s from "./DiscountCoupon.module.css"
 import Input from "../UI/Input"
 import BtnDiscount from "../UI/BtnDiscount"
+import { BASE_URL } from "../.."
 
 function DiscountCoupon(){
 
@@ -15,9 +16,19 @@ function DiscountCoupon(){
         formState: {errors}
     } = useForm()
 
-    const onSubmit = (data) => {
+    const onSubmit = async (data) => {
         console.log(data)
         reset()
+
+        let response = await fetch(`${BASE_URL}/order/send`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ data })
+        })
+
+        const result = await response.json()
     }
 
     return (
@@ -28,6 +39,7 @@ function DiscountCoupon(){
                 <div className={s.DiscountCoupon_IMG}></div>
                 <div className={s.Registration_form}>
                 <form>
+                    <div style={{positon: 'relative'}}>
                     <Input {...register('email',{
                         required: 'EMail should be filled',
                         pattern:{
@@ -36,8 +48,9 @@ function DiscountCoupon(){
                         }
                     })}/>
                     {errors.email && <p className={s.warning_text}>{errors.email.message}</p>}
-                    
+                    </div>
 
+                    <div style={{positon: 'relative'}}>
                     <Input {...register('phone', {
                         required: 'Phone number should be filled',
                         pattern: {
@@ -47,7 +60,9 @@ function DiscountCoupon(){
                         
                         })} />
                     {errors.phone && <p className={s.warning_text}>{errors.phone.message}</p>}
+                    </div>
 
+                    <div style={{positon: 'relative'}}>
                     <Input {...register('username', {
                         required: 'Username should be filled',
                         minLength: {
@@ -59,6 +74,7 @@ function DiscountCoupon(){
                             message: 'Username should not exceed 20 characters'
                         }
                         })} />
+                    </div>
                     {errors.username && <p className={s.warning_text}>{errors.username.message}</p>}
                 </form> 
                 <BtnDiscount

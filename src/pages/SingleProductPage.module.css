@@ -1,0 +1,300 @@
+.ProductLayout{
+    padding: 80px 40px 80px 40px;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.ProductInfoField{
+    display: flex;
+    width: 548px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.ProductName{
+    width: 548px;
+    color: var(--txt-black, #282828);
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 44px */
+    letter-spacing: 1.2px;
+}
+
+.ProductCostField{
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.ProductCostField_Into{
+    display: flex;
+    align-items: baseline;
+    gap: 32px;
+}
+
+.ProductCost_New{
+    color: var(--txt-black, #282828);
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 70.4px */
+}
+
+.ProductCost_Old{
+    color: var(--txt-grey, #8B8B8B);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 52px */
+    text-decoration-line:line-through;
+}
+
+.DiscountPercent{
+    color: var(--txt-white, #FFF);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 26px */
+    letter-spacing: 0.6px;
+    display: flex;
+    padding: 4px 8px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: var(--radius-small, 6px);
+    background: var(--green, #393);
+}
+
+.ToCartAddonField{
+    display: flex;
+    width: 548px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.btn_elem{
+    display: flex;
+    width: 316px;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: var(--radius-small, 6px);
+    background: var(--green, #393);
+
+    color: var(--txt-white, #FFF);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 26px */
+
+    z-index: 4;
+    cursor: pointer;
+    border: none;
+}
+
+.btn_elem:hover{
+    background: var(--black, #282828);
+}
+
+.btn_elem_pressed{
+    display: flex;
+    width: 316px;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: var(--radius-small, 6px);
+    background: var(--white, #FFF);
+
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 26px */
+
+    z-index: 4;
+    cursor: pointer;
+}
+
+.DescriptionField{
+    display: flex;
+    width: 548px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.DescriptionName{
+    color: var(--txt-black, #282828);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 26px */
+}
+
+.DescriptionImport{
+    height: 227px;
+    align-self: stretch;
+    overflow: hidden;
+    color: var(--txt-black, #282828);
+    text-overflow: ellipsis;
+    /* white-space: nowrap; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 20.8px */
+}
+
+
+
+/* NE KOSTYL' A KOSTILISHE */
+.CounterLayout{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1 0 0;
+}
+
+.CounterButton{
+    display: flex;
+    width: 58px;
+    height: 58px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radius-small, 6px);
+    border: 1px solid var(--grey-divider, #DDD);
+}
+
+.CounterAmount{
+    display: flex;
+    width: 96px;
+    height: 58px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid var(--grey-divider, #DDD);
+    border-bottom: 1px solid var(--grey-divider, #DDD);
+
+    color: var(--txt-black, #282828);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 26px */
+}
+
+.ProdImg{
+ color: #DDD;
+}
+
+@media screen and (max-width: 400px) {
+    .ProductLayout {
+    width: 100%;
+      padding: 0px;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+  
+    .ProductInfoField {
+      width: 100%;
+      align-items: center;
+      gap: 16px;
+    }
+  
+    .ProductName {
+      width: auto;
+      font-size: 32px;
+      line-height: 120%;
+    }
+  
+    .ProductCostField {
+      flex-direction: column;
+      gap: 12px;
+    }
+  
+    .ProductCostField_Into {
+      flex-direction: column;
+      gap: 16px;
+    }
+  
+    .ProductCost_New {
+      font-size: 48px;
+      line-height: 110%;
+    }
+    
+    .ProductCost_Old {
+      font-size: 32px;
+      line-height: 120%;
+    }
+  
+    .DiscountPercent {
+      font-size: 16px;
+      line-height: 120%;
+      padding: 3px 6px;
+      gap: 8px;
+      border-radius: 4px;
+    }
+  
+    .ToCartAddonField {
+      width: 100%;
+      gap: 16px;
+      justify-content: flex-start;
+      flex-direction: column;
+    }
+  
+    .btn_elem,
+    .btn_elem_pressed {
+      width: 100%;
+      padding: 12px 24px;
+      gap: 8px;
+      font-size: 16px;
+      line-height: 120%;
+    }
+  
+    .DescriptionField {
+      width: 100%;
+      gap: 12px;
+    }
+  
+    .DescriptionImport {
+      height: auto;
+      text-overflow: initial;
+      white-space: normal;
+      font-size: 14px;
+      line-height: 120%;
+    }
+  
+    .CounterLayout {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .CounterButton {
+      width: 48px;
+      height: 48px;
+    }
+  
+    .CounterAmount {
+      width: auto;
+      height: auto;
+      font-size: 16px;
+      line-height: 120%;
+    }
+
+    .ProdImg{
+        width:100px;
+        height: 100px;
+    }
+  }

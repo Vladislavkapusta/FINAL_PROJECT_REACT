@@ -15,6 +15,7 @@
 }
 
 .CategoriesItem_Name{
+    text-decoration: none;
     align-self: stretch;
     color: var(--txt-black, #282828);
     text-align: center;

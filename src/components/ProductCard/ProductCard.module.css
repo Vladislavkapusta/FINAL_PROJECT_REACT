@@ -39,6 +39,9 @@
     font-style: normal;
     font-weight: 500;
     line-height: 130%; /* 26px */
+
+    /* Костылечек однако */
+    margin-top: 20px;
 }
 
 .ProductCard_PriceBox{
@@ -90,5 +93,67 @@ border-radius: var(--radius-small, 6px);
 background: var(--green, #393);
 }
 
-
+@media (max-width: 400px) {
+    .ProductCard_card {
+      width: 100%;
+      border-radius: var(--radius-medium, 8px);
+      gap: 10px;
+      padding: 10px;
+    }
+  }
+  
+  /* ProductCard_IMG */
+  @media (max-width: 400px) {
+    .ProductCard_IMG {
+      height: 200px;
+    }
+  }
+  
+  /* ProductCard_InfoBox */
+  @media (max-width: 400px) {
+    .ProductCard_InfoBox {
+      width: 100%;
+      padding: 0px 16px 16px 16px;
+      gap: 10px;
+    }
+  }
+  
+  /* ProductCard_Name */
+  @media (max-width: 400px) {
+    .ProductCard_Name {
+      font-size: 16px;
+      line-height: 110%;
+      margin-top: 10px;
+    }
+  }
+  
+  /* ProductCard_PriceBox */
+  @media (max-width: 400px) {
+    .ProductCard_PriceBox {
+      gap: 8px;
+    }
+  }
+  
+  /* ProductCard_Price_Actual */
+  @media (max-width: 400px) {
+    .ProductCard_Price_Actual {
+      font-size: 28px;
+    }
+  }
+  
+  /* ProductCard_Price_Old */
+  @media (max-width: 400px) {
+    .ProductCard_Price_Old {
+      font-size: 16px;
+      line-height: 110%;
+    }
+  }
+  
+  /* ProductCard_Sale */
+  @media (max-width: 400px) {
+    .ProductCard_Sale {
+      font-size: 16px;
+      width: 32px;
+    }
+  }
 
