@@ -195,7 +195,8 @@
 }
 
 .ProdImg{
- color: #DDD;
+    width: 780px;
+    height: 572px
 }
 
 @media screen and (max-width: 400px) {
@@ -295,7 +296,7 @@
     }
 
     .ProdImg{
-        width:100px;
-        height: 100px;
+        width:380px;
+        height: 200px;
     }
   }

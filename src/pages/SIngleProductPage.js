@@ -33,11 +33,8 @@ function SingleProductPage(){
                         <div className= {s.ProdImg}
                                 style={{
                                 background: `url(${BASE_URL+elem.image}) lightgray 50% / contain no-repeat`,
-                                flex: '1 0 0',
                                 alignSelf: 'stretch',
                                 borderRadius: 'var(--radius-big, 12px)',
-                                width: '780px',
-                                height: '572px'
                                 }} 
                         >
                         </div>
