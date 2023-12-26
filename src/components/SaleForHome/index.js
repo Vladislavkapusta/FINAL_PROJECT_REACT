@@ -4,11 +4,11 @@ import s from './SaleForHome.module.css'
 import SalesList from '../SalesList';
 import { useRef } from 'react';
 
-export const SaleForHome = forwardRef((ref) => {
+export const SaleForHome = forwardRef((props, ref) => {
 
   return (
     <div className={`${s.SaleForHome_Container}`}
-    //  ref={ref}
+     ref={ref}
      >
         <header className= {`${s.SaleForHome_Head}`}>
             <h2 className= {`${s.SaleForHome_Head_Title}`}>Sale</h2>
