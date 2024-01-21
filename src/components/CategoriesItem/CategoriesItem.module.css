@@ -24,3 +24,19 @@
     font-weight: 500;
     line-height: 130%; /* 26px */
 }
+
+@media (max-width: 600px) {
+    .CategoriesItem_card {
+        gap: 8px;
+    }
+
+    .CategoriesItem_IMG {
+        height: 250px;
+        border-radius: var(--radius-medium, 8px);
+    }
+
+    .CategoriesItem_Name {
+        font-size: 16px;
+        line-height: 120%; /* 19.2px */
+    }
+}
