@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.810176bc.css",
-    "main.js": "/static/js/main.fda90bef.js",
-    "static/media/DiscoutnAD.jpg": "/static/media/DiscoutnAD.18d6b6fd713abb642ef1.jpg",
-    "static/media/imagediscount.png": "/static/media/imagediscount.dea114f16aca2b49635b.png",
-    "static/media/404.png": "/static/media/404.fbb29eeb124e6e04d40a.png",
-    "static/media/telega.png": "/static/media/telega.d877a82794516d4c7530.png",
-    "static/media/vk-outline.svg": "/static/media/vk-outline.2e00e571a0632bff7ed1e71a949eb9a9.svg",
-    "static/media/Cart.svg": "/static/media/Cart.5811eced3fe8014209a8d56d3d27c586.svg",
-    "static/media/x_mark.svg": "/static/media/x_mark.2987276b462709e158ab6b1f645fc22f.svg",
-    "static/media/Xpop.svg": "/static/media/Xpop.9339a86cd9bf47830420c5ac4e71a0ba.svg",
-    "index.html": "/index.html",
-    "main.810176bc.css.map": "/static/css/main.810176bc.css.map",
-    "main.fda90bef.js.map": "/static/js/main.fda90bef.js.map"
+    "main.css": "/FINAL_PROJECT_REACT/static/css/main.450e7b2e.css",
+    "main.js": "/FINAL_PROJECT_REACT/static/js/main.499228a7.js",
+    "static/media/DiscoutnAD.jpg": "/FINAL_PROJECT_REACT/static/media/DiscoutnAD.18d6b6fd713abb642ef1.jpg",
+    "static/media/imagediscount.png": "/FINAL_PROJECT_REACT/static/media/imagediscount.dea114f16aca2b49635b.png",
+    "static/media/404.png": "/FINAL_PROJECT_REACT/static/media/404.fbb29eeb124e6e04d40a.png",
+    "static/media/telega.png": "/FINAL_PROJECT_REACT/static/media/telega.d877a82794516d4c7530.png",
+    "static/media/vk-outline.svg": "/FINAL_PROJECT_REACT/static/media/vk-outline.2e00e571a0632bff7ed1e71a949eb9a9.svg",
+    "static/media/Cart.svg": "/FINAL_PROJECT_REACT/static/media/Cart.5811eced3fe8014209a8d56d3d27c586.svg",
+    "index.html": "/FINAL_PROJECT_REACT/index.html",
+    "static/media/x_mark.svg": "/FINAL_PROJECT_REACT/static/media/x_mark.2987276b462709e158ab6b1f645fc22f.svg",
+    "static/media/Xpop.svg": "/FINAL_PROJECT_REACT/static/media/Xpop.9339a86cd9bf47830420c5ac4e71a0ba.svg",
+    "main.450e7b2e.css.map": "/FINAL_PROJECT_REACT/static/css/main.450e7b2e.css.map",
+    "main.499228a7.js.map": "/FINAL_PROJECT_REACT/static/js/main.499228a7.js.map"
   },
   "entrypoints": [
-    "static/css/main.810176bc.css",
-    "static/js/main.fda90bef.js"
+    "static/css/main.450e7b2e.css",
+    "static/js/main.499228a7.js"
   ]
 }
